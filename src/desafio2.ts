@@ -8,6 +8,8 @@ enum Profissao {
     Atriz
 }
 
+// Função para padronizar atribuição de nome em maiúsculas
+
 function toUpperCaseString (userEntry: string):string  {
     let entry:string = userEntry.toUpperCase();
     return entry;
@@ -32,16 +34,14 @@ const pessoa2:Pessoa = {
 }
 
 const pessoa3:Pessoa = {
-    nome: "Laura",
+    nome: toUpperCaseString("Laura"),
     idade: 32,
     profissao: Profissao.Atriz
 }
 
 const pessoa4:Pessoa = {
-    nome: "Carlos",
+    nome: toUpperCaseString("Carlos"),
     idade: 19,
     profissao: Profissao.Padeiro
 }
-
-console.log(pessoa2);
 
